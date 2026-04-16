@@ -1,0 +1,121 @@
+:root{
+  --primary-color: black;
+  --secondary-color: white;
+  --bg-color: white;
+  --text-color: white;
+}
+@font-face {
+    font-family: 'Boldonse'; /* The name you will use later */
+    src: url('/Fonts/Boldonse-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  max-width:100%;
+  min-height: 1000px;
+  background: var(--bg-color);
+  padding: 0;
+  margin: 0;
+}
+.nav{
+   z-index: 400;
+  width: 80%;
+  height: 70px;
+  margin: auto ;
+  position: sticky;
+  margin-top: 60px;
+  top: 0px;
+  background: var(--primary-color);
+  border-radius: 100px;
+  animation: nav linear;
+  animation-timeline: scroll();
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.nav ul{
+  display: flex;
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 25px;
+  justify-content: flex-end;
+}
+ @keyframes nav {
+   0%{
+     width: 80%;
+     top: 0px;
+   }
+   30%{
+     width: 100%;
+     top: 0px;
+     border-radius: 0px;
+   }
+   100%{
+     width: 100%;
+     top: 0px;
+     border-radius: 0px;
+   }
+ }
+.nav li:first-child{
+  margin-right: auto;
+  height: 100;
+  font-size: 20px;
+}
+.nav li{
+  position: ;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  height:70pxpx;
+  width:40px;
+  align-items: center;
+}
+.nav li a{
+  text-decoration: none;
+  color: var(--text-color) ;
+  font-weight: normal;
+  font-family: Boldonse;
+  display: flex;
+  align-items: Center ;
+  justify-items: Center ;
+}
+#sidebar-button{
+  display:none;
+}
+.sidebar{
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top:0;
+  display: flex;
+  background-color: black;
+  opacity: 50%;
+  transition:.5s ease-in-out;
+  display: flex;
+  left: -250px;
+  z-index: 950;
+}
+
+#sidebar-button:checked ~ .sidebar{
+   left: 0px;
+}
+.sidebar-label{
+  width: 100vw;
+  height: 100vh;
+  z-index: 949;
+  display: none;
+}
+#sidebar-button:checked ~ .sidebar-label{
+  display: block;
+  top: 0;
+  position: fixed;
+}
