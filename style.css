@@ -127,7 +127,6 @@ body{
   width: 250px;
 }
 .sidebar ul li a{
-  position: ;
   list-style: none ;
   text-decoration: none;
 color: var(--text-color);
@@ -154,5 +153,6 @@ nav li img{
   height: 50ox;
   border-radius: 100%;
 }
+
 
 /*--------HOME-END----------*/
