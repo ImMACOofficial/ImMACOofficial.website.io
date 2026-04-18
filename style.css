@@ -158,10 +158,6 @@ nav li img{
   border-radius: 100%;
 }
 
-/*PRIMARY END*/
-
-/*-------HOME-START---------*/
-
 .header{
   background-image:url(header-bg.png);
   min-height: 100vh;
@@ -172,5 +168,8 @@ nav li img{
   background-repeat: no-repeat;
   background-position: center;
 }
+/*PRIMARY END*/
+
+/*--------HOME-START----------*/
 
 /*--------HOME-END----------*/
