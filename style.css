@@ -103,12 +103,13 @@ body{
   position: fixed;
   top:0;
   display: flex;
-  background-color: black;
+  background-color: #00000020;
   transition:.5s ease-in-out;
   display: flex;
   right: -250px;
   z-index: 950;
   border: 2px solid black;
+  backdrop-filter: blur(10px);
 }
 
 #sidebar-button:checked ~ .sidebar{
@@ -158,15 +159,15 @@ nav li img{
   border-radius: 100%;
 }
 
-.header{
+.hero{
   background-image:url(header-bg.png);
-  min-height: 100vh;
-  min-width: 100vw;
+  min-height: 110vh;
   display: block;
   margin-top: -110px;
   top: 0;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 /*PRIMARY END*/
 
