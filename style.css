@@ -30,7 +30,7 @@ body{
   height: 70px;
   margin: auto ;
   position: sticky;
-  margin-top: 60px;
+  margin-top: 40px;
   top: 0px;
   background: var(--primary-color);
   border-radius: 100px;
@@ -166,8 +166,11 @@ nav li img{
   background-image:url(header-bg.png);
   min-height: 100vh;
   min-width: 100vw;
-  display: flex;
+  display: block;
+  margin-top: -110px;
   top: 0;
+  background-repeat: no-repeat;
+  
 }
 
 /*--------HOME-END----------*/
