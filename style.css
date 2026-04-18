@@ -169,6 +169,28 @@ nav li img{
   background-position: center;
   background-size: cover;
 }
+.hh{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+.hh img{
+  height: 27vw;
+  width: auto;
+  padding: 20px;
+  flex: 1 0 200;
+}
+.hh img:first-child{
+  margin-top: 20vh;
+}
+
+
+
+
+
+
+
 /*PRIMARY END*/
 
 /*--------HOME-START----------*/
