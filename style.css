@@ -168,10 +168,34 @@ nav li img{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  
 }
-.
+.hero h1{
+  font-family: new rocker;
+  font-size: 10vw;
+  color: white;
+  padding: 20px;
+  top: 100px;
+  position: relative;
+}
+.br1{
+  display: block;
+}
 
 
+
+
+
+
+@media (min-width: 768px;) {
+ .br1{
+   display: none;
+   
+ }
+.hero h1{
+  color: #000;
+}
+}
 
 
 
