@@ -187,14 +187,12 @@ nav li img{
 
 
 
-@media (min-width: 768px;) {
+@media (min-width: 768px) {
  .br1{
    display: none;
    
  }
-.hero h1{
-  color: #000;
-}
+
 }
 
 
